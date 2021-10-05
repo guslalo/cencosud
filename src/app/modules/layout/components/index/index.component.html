@@ -1,0 +1,123 @@
+ <!--wrap-->
+<div class="wrap">
+    <div class="boxLayout">
+        <!--sidebar-->
+        <div class="col sidebar">
+            <!--logo-->
+            <div class="logo">
+                <img src="assets/img/logo.png"> 
+            </div><!--logo-->
+            <h3 class="font-weight-bold p-lr-50 mt-0">Menu</h3>
+
+            <!--menu--><app-menu></app-menu><!--/menu-->
+
+            <!--account--><app-account></app-account><!--/account-->
+           
+            <!--banner--><app-banner></app-banner><!--/banner-->
+           
+        </div>
+        
+        <!--/sidebar-->
+
+        <!--main content-->
+        <div class="main">
+            <router-outlet></router-outlet>
+        </div><!--/main content-->
+        
+
+        <!--sidebar-second-->
+        <div class="col sidebar-second"> 
+            <div class="row">
+                <div class="col d-inline vertical-align-top">
+                    <input type="search" class="search" placeholder="Search">
+                </div>
+       
+
+                <div class="col circle">
+                    <span class="material-icons">
+                        notifications
+                    </span>
+                </div>
+                <div class="col circle bg-blue">
+                    <span class="material-icons">
+                        backup
+                    </span>
+                </div>
+
+            </div>
+            <!--suggestions-->
+            <app-suggestions></app-suggestions><!--/suggestions-->
+            
+            <div class="row mt-20">
+                <div class="col vertical-align-middle">
+                    <div class="boxProfile">
+                        <div class="img">
+                            <img src="assets/img/profile.jpg">
+                        </div>
+                        <div class="texts">
+                            <p class="name font-weight-bold">Michael</p>
+                            <p class="profile">@michaelsco_</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <button class="rose">
+                        Follow
+                    </button>
+                  
+                </div>
+            </div>
+            <div class="row mt-20">
+                <div class="col vertical-align-middle">
+                    <div class="boxProfile">
+                        <div class="img">
+                            <img src="assets/img/profile.jpg">
+                        </div>
+                        <div class="texts">
+                            <p class="name font-weight-bold">Michael</p>
+                            <p class="profile">@michaelsco_</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <button>
+                        Follow
+                    </button>
+                </div>
+            </div>
+            <div class="row mt-20 mb-20">
+                <div class="col vertical-align-middle">
+                    <div class="boxProfile">
+                        <div class="img">
+                            <img src="assets/img/profile.jpg">
+                        </div>
+                        <div class="texts">
+                            <p class="name font-weight-bold">Michael</p>
+                            <p class="profile">@michaelsco_</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <button class="rose">
+                        Follow
+                    </button>
+                  
+                </div>
+            </div>
+            <hr>
+            <!--latest-posts-->
+            <app-latest-posts></app-latest-posts><!--/latest-posts-->
+            <ol class="terms mt-40 d-inline-block">
+                <li>About</li>
+                <li>Help</li>
+                <li>Terms</li>
+                <li>Popular</li>
+                <li>Test</li>
+            </ol>
+           
+        </div><!--/sidebar-second-->
+       
+    </div>
+</div><!--/wrap-->
+
+
